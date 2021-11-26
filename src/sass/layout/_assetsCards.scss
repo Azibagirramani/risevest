@@ -1,0 +1,130 @@
+@import "../base/_colors.scss";
+@import "../abstract/breakpoints.scss";
+
+.assest-cards {
+  margin-top: 10rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 0px;
+  transition: all 0.8s ease-in-out;
+
+  @include for-phone-only {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+.asset-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  h1 {
+    font-size: 3rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  p {
+    padding: 0rem;
+    font-size: 1.2rem;
+    font-family: DM Sans;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+// card header colors
+
+.first-card {
+  background-color: $first_card;
+}
+
+.second-card {
+  background-color: $second_card;
+}
+
+.third-card {
+  background-color: $third_card;
+}
+
+.assest-card {
+  margin-bottom: 1rem;
+  border: 1px solid #eaeaea;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease-in-out;
+
+  .assest-card-top {
+    height: 8rem;
+    text-align: center;
+    img {
+      width: 4rem;
+      border-radius: 100%;
+      height: 4rem;
+      object-fit: cover;
+      outline: white solid 0.8rem;
+      transform: translate(0, 6.2rem);
+    }
+  }
+
+  .assest-card-body {
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    .assest-card-title {
+      font-size: 1.35rem;
+      font-family: Tomato Grotesk;
+      font-style: normal;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      word-spacing: 0.1rem;
+      letter-spacing: -0.05em;
+      margin-bottom: 0rem;
+    }
+  }
+
+  .assest-card-footer {
+    padding: 1rem;
+    text-align: center;
+    padding-top: 5rem;
+  }
+}
+
+.h-link {
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+.apartners {
+   img {
+    
+    @include for-phone-only {
+      width: 50%;
+      height: 100%;
+      display: none;
+    }
+   }
+}

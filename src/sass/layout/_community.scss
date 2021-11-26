@@ -1,0 +1,41 @@
+@import "../abstract/breakpoints";
+@import "../base/colors";
+.community {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  @include for-phone-only {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+  }
+
+  .community-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      margin-top: 0;
+      line-height: 1rem;
+      line-height: 1.3rem;
+    }
+
+    button {
+      background-color: #a0dde2 !important;
+      color: #2d2d2d;
+      width: 218px;
+      height: 3rem;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+
+  .communnity-img {
+    display: flex;
+    justify-content: end;
+  }
+}

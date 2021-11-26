@@ -5,6 +5,14 @@ import "./sass/abstract/_containers.scss";
 import "./sass/layout/_hero.scss";
 import "./sass/layout/_service_title.scss";
 import "./sass/layout/_footer.scss";
+import "./sass/layout/_apartners.scss";
+import "./sass/layout/_assetsCards.scss";
+import "./sass/layout/_testimonial.scss";
+import "./sass/layout/_global.scss";
+import "./sass/layout/_ads.scss";
+import "./sass/layout/_community.scss";
+import "./sass/base/_variables.scss";
+// import "bootstrap-icons";
 import App from './entry';
 import reportWebVitals from './reportWebVitals';
 

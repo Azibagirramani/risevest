@@ -7,7 +7,7 @@ function NavBar() {
         <i class="fa fa-bars"></i>
         <ul className="nav--bar-ul">
           <li href="/#">Home</li>
-          <li href="/#">Products</li>
+          <li href="/#">Products <i class="bi bi-arrow-down-short"></i></li>
           <li href="/#">Investment Club</li>
           <li href="/#">Blog</li>
           <li href="/#">About Us</li>

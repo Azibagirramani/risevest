@@ -4,4 +4,32 @@
 
 $primary-color: #07969E;
 $secondary-color: #10e9f5;
-$tertiary-color: #4A5050;;
+$tertiary-color: #4A5050;
+
+
+$first_card: #FFF4F0;
+$second_card: #F6F2FF;
+$third_card: #ECFEFE;
+
+
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+
+.bg-secondary {
+  background-color: $secondary-color;
+}
+
+.bg-offset {
+  background-color: $tertiary-color;
+}
+
+.fc-primary {
+  color: $primary-color;
+}
+
+.fc-secondary {
+  color: $secondary-color;
+}
