@@ -1,0 +1,41 @@
+@import "../base/_colors.scss";
+
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-basis: auto;
+    gap: 5rem;
+    margin-top: 7rem;
+    div {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 50%;
+        h4 {
+            font-family: Tomato Grotesk;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 90%;
+            letter-spacing: -0.05em;
+        }
+        p {
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        a {
+            font-family: Tomato Grotesk;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: -0.05em;
+            color: $primary-color;
+            list-style: none;
+            text-decoration: none;
+        }
+    }
+}

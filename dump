@@ -1,0 +1,76 @@
+     
+      {/* hero section */}
+      <section className="hero">
+        <div className="hero--description">
+          <h1>
+            Dollar investments that help you grow
+          </h1>
+          <p>We put your money in high quality assets that help you build wealth and achieve your financial goals.</p>
+        </div>
+        <div className="hero--image">
+          <img src={HeroImage} alt="hero" className="img-fluid"/>
+        </div>
+      </section>
+
+      {/* service section */}
+      <section className="services-container">
+        <div>
+          <h4>Invest your money in dollars</h4>
+          <p>By holding your investments in a stable currency, your money grows more over time and retains its value better.</p>
+          <a href="/#">Start Investing Now</a>
+        </div>
+        <div>
+        <img src={HeroImage} alt="hero" className="img-fluid"/>
+        </div>
+      </section>
+
+
+
+      function Footer() {
+        return (
+          <div className="footer">
+            <div className="footer--cols">
+              <p className="header header-logo">rise</p>
+              <ul>
+                  <li>About Us</li>
+                  <li>Careers</li>
+                  <li>FAQs</li>
+                  <li>Contact Info</li>
+                  <li>Press</li>
+                  <li>Rise Impact</li>
+              </ul>
+            </div>
+            <div className="footer--cols">
+              <p className="header">Explore</p>
+              <ul>
+                  <li>Investmet Club</li>
+                  <li>Blog</li>
+                  <li>Newsletter</li>
+                  <li>Instagram</li>
+                  <li>Twitter</li>
+              </ul>
+            </div>
+            <div className="footer--cols">
+              <p className="header">Products</p>
+              <ul>
+                  <li>Rise App</li>
+                  <li>Wallets</li>
+                  <li>Asset Classes</li>
+              </ul>
+            </div>
+            <div className="footer--cols">
+              <p className="header">Contact Us</p>
+              <ul>
+                  <li>0818 714 7405</li>
+                  <li>hello@rise.capital</li>
+                  <li>Newsletter</li>
+                  <li>Instagram</li>
+                  <li>Twitter</li>
+              </ul>
+            </div>
+          </div>
+        );
+      }
+      
+      export default Footer;
+      

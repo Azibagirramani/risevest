@@ -1,11 +1,11 @@
 function NavBar() {
   return (
-    <div className="container">
       <div className="nav-bar">
         <div className="nav-bar-logo">
           <a href="/#">Logo </a>
         </div>
-        <ul>
+        <i class="fa fa-bars"></i>
+        <ul className="nav--bar-ul">
           <li href="/#">Home</li>
           <li href="/#">Products</li>
           <li href="/#">Investment Club</li>
@@ -14,7 +14,6 @@ function NavBar() {
           <li href="/#">FAQs</li>
         </ul>
       </div>
-    </div>
   );
 }
 

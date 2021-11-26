@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./sass/layout/_navbar.scss";
 import "./sass/abstract/_containers.scss";
+import "./sass/layout/_hero.scss";
+import "./sass/layout/_service_title.scss";
+import "./sass/layout/_footer.scss";
 import App from './entry';
 import reportWebVitals from './reportWebVitals';
 

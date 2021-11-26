@@ -1,38 +1,71 @@
 @import "../base/_colors.scss";
+@import "../abstract/breakpoints";
 
 .nav-bar {
-    .nav-bar-logo {
-        a {
-            list-style: none;
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: $primary-color !important;
-        }
+  @include for-phone-only {
+    .responive {
+      position: relative;
     }
-    display: flex !important;
-    flex-direction: row !important;
-    width: 100% !important; 
-    height: inherit;
-    justify-content: space-between;
-    align-items: center;
-    ul{
-        padding: 0;
-        margin: 0;
-        li{
-            list-style: none;
-            display: inline;
-            padding: 0rem 1rem;
-            color: $secondary-color !important;
-            cursor: pointer;
-            font-weight: 800;
-            a {
-                font-size: 0.8rem;
-                font-family: 'Times New Roman', Times, serif;
-                font-style: normal;
-            }
-            &:active, &:hover, &:visited, &:link, &:focus {
-                color: $primary-color !important;
-            }
-        }
+  }
+  i {
+    display: none;
+    @include for-phone-only {
+      display: none;
     }
+  }
+  .nav-bar-logo {
+    a {
+      list-style: none;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: $primary-color !important;
+    }
+  }
+  display: flex !important;
+  flex-direction: row !important;
+  width: 100% !important;
+  height: inherit;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav--bar-ul {
+  @include for-phone-only {
+    width: 100%;
+    height: 100%;
+    position: fixed; 
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: black;
+    transition: 0.4s;
+  }
+
+  padding: 0;
+  margin: 0;
+  li {
+    @include for-phone-only {
+      display: block;
+      width: 100%;
+      transition: 0.4s;
+      margin-bottom: 1rem;
+    }
+    list-style: none;
+    display: inline;
+    color: $secondary-color !important;
+    cursor: pointer;
+    font-weight: 600;
+    padding-inline: 2rem 0rem !important;
+    a {
+      font-size: 0.8rem;
+      font-family: "Times New Roman", Times, serif;
+      font-style: normal;
+    }
+    &:active,
+    &:hover,
+    &:visited,
+    &:link,
+    &:focus {
+      color: $primary-color !important;
+      font-weight: 600;
+    }
+  }
 }

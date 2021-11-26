@@ -1,5 +1,17 @@
-
+@import "./breakpoints";
 
 .container {
     margin: 1rem 15rem;
+    transition: all 0.8s ease-in-out;
+    @include for-phone-only {
+        margin: 1rem 0.5rem;
+    }
+
+    @include for-tablet-portrait-up {
+        margin: 1rem 1rem;
+    }
+
+    @include for-desktop-up; @include for-tablet-landscape-up {
+        margin: 1rem 10rem;
+    }
 }

@@ -1,0 +1,50 @@
+@import "../abstract/breakpoints";
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 5rem;
+
+  @media screen and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem 2rem;
+  }
+}
+
+.footer--cols {
+  @include for-phone-only {
+    flex: 50%;
+  }
+  @include unknown-breakpoint  {
+    flex: 33.33%;
+  }
+
+  @include for-tablet-landscape-up  {
+    flex: 33.33%;
+  }
+  .header {
+    font-family: Tomato Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+    list-style: none;
+    margin: 0rem;
+    li {
+      cursor: pointer;
+      color: #2d2d2d !important;
+      padding-bottom: 1.5rem;
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: normal;
+      display: block;
+      padding-inline: 0rem !important;
+    }
+  }
+}
